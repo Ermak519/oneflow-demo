@@ -1,0 +1,142 @@
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul[class] {
+  padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+    min-height: 100vh;
+    scroll-behavior: smooth;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+  }
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class] {
+  list-style: none;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+    text-decoration-skip-ink: auto;
+  }
+
+  /* Упрощаем работу с изображениями */
+img {
+    max-width: 100%;
+    display: block;
+  }
+
+  /* Указываем понятную периодичность в потоке данных у article*/
+article > * + * {
+    margin-top: 1em;
+  }
+
+
+/* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
+@media (prefers-reduced-motion: reduce) {
+    * {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+
+.nav-menu {
+    display: flex;
+    height: 80px;
+    left: 0%;
+    right: 0%;
+    top: 0px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 10px rgba(1, 58, 76, 0.2);
+    border-radius: 0px;
+}
+
+.logo-icon {
+margin-left: 50px;
+margin-top: 30px;
+transform: translateY(-25%);
+}
+.main-nav {
+  display: inline-block;
+  left: 340px;
+  
+}
+.list-item {
+    display: inline-block;
+    margin-top: 30px;
+    margin-left: 32px;
+    font-family: Work Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    /* identical to box height, or 125% */
+    color: #013A4C;
+    justify-content: space-between;
+}
+
+.list-item a {
+    text-decoration: none;
+    color: #013A4C;
+}
+.why-oneflow, .learn  {
+  margin-right: 60px;
+}
+
+.buttons {
+  margin-top: 30px;
+  margin-left: 48px;
+  margin-right: 50px;
+  transform: translateY(-25%);
+}
+
+.btn {
+    /* position: absolute; */
+    height: 40px;
+    left: 0%;
+    right: 0%;
+    top: 0px;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+
+.get-demo {
+  background: #FFD063;
+  border: 1px solid #FFD063;
+}
+
+.log-in{
+  background: #FFFFFF;
+  border: 1px solid #346170;
+}
+
+.icon{
+  display: flex;
+margin-top: 30px;
+}
