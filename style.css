@@ -43,7 +43,9 @@ img {
   }
 
 /*-------------------------------------------------*/
-
+.btn:hover {
+  cursor: pointer;
+}
 .nav-menu {
     display: flex;
     height: 80px;
@@ -123,8 +125,8 @@ transform: translateY(-25%);
 
 .title-wrapper {
   background-image: url(/src/img/hero-main.png);
-  width: 100%;
-  height: 850px;
+  background-size: cover;
+  height: 950px;
 
 }
 
@@ -185,7 +187,6 @@ transform: translateY(-25%);
 
 .wrapper-partners .partners {
   padding-top: 80px;
-  margin-bottom: 30px;
   background-color: #013A4C;
 }
 
@@ -201,11 +202,81 @@ transform: translateY(-25%);
   margin-bottom: 25px;
 }
 .wrapper-partners .partners .partners-logo-list{
-  margin-left: 300px;
+  display: flex;
+  text-align: center;
+  justify-content:center;
 }
 .wrapper-partners .partners .partners-logo-list img{
   display: inline-block;
   margin-right: 30px;
 }
 
+.wrapper-signature {
+  background-color: #013A4C;
+  display: flex;
+  justify-content: space-between;
+}
 
+.wrapper-signature .signature {
+  background-color: #013A4C;
+  margin-left: 145px;
+  padding-top: 110px;
+}
+
+.wrapper-signature .signature h3 {
+  font-family: sans-serif Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 72px;
+  line-height: 72px;
+  letter-spacing: 0.7px;
+  color: #FFFFFF;
+  margin-bottom: 25px;
+}
+
+.wrapper-signature .signature p {
+  font-family: sans-serif Work Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 21px;
+  line-height: 28px;
+  color: #FFFFFF;
+}
+
+.wrapper-signature .wrapper-img {
+  display: flex;
+  background-color: #013A4C;
+  margin-right: 157px;
+}
+
+
+.wrapper-signature .signature .product-tour {
+  background: #FFD063;
+  border: 1px solid #FFD063;
+  width: 216px;
+  height: 50px;
+  border-radius: 4px;
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+.wrapper-signature .signature .product-tour:hover{
+  background: #ecd8a7;
+  border: 1px solid red;
+}
+
+.wrapper-board{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  background-color: #013A4C;
+}
+
+.wrapper-board .board {
+  margin-top: 100px;
+  margin-bottom: 120px;
+  width: 1150px;
+  height: 600px;
+  border-radius: 8px;
+  background-color: #D3E8F4;
+}
