@@ -46,6 +46,7 @@ img {
 .btn:hover {
   cursor: pointer;
 }
+
 .nav-menu {
     display: flex;
     height: 80px;
@@ -62,6 +63,7 @@ margin-left: 50px;
 margin-top: 30px;
 transform: translateY(-25%);
 }
+
 .main-nav {
   display: inline-block;
   margin: 0 0 0 auto;
@@ -75,7 +77,6 @@ transform: translateY(-25%);
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
-    /* identical to box height, or 125% */
     color: #013A4C;
     justify-content: space-between;
 }
@@ -214,12 +215,12 @@ transform: translateY(-25%);
 .wrapper-signature {
   background-color: #013A4C;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .wrapper-signature .signature {
   background-color: #013A4C;
-  margin-left: 145px;
+  margin-left: 144px;
   padding-top: 110px;
 }
 
@@ -280,3 +281,110 @@ transform: translateY(-25%);
   border-radius: 8px;
   background-color: #D3E8F4;
 }
+
+.icons {
+  display: flex;
+  margin-top: 32px;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.icon{
+  text-align: center;
+}
+
+.icon:first-child {
+  margin-left: 96px;
+}
+
+.icon:last-child {
+  margin-right: 96px;
+}
+
+.icons .icon img {
+  margin-bottom: 7px;
+}
+
+.icons .icon .wrap-img {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+.wrapper-board .icons-line hr{
+  border:solid 1px #94B4C2;
+  margin-top: 34px;
+}
+
+.wrapper-board .board .descr{
+  display: flex;
+  justify-content: space-between;
+}
+
+.wrapper-board .board .descr .wrapper-descr {
+  float: left;
+  margin-left: 64px;
+  margin-top: 37px;
+}
+
+.wrapper-board .board .descr .wrapper-descr h3 {
+  display: flex;
+  justify-content: start;
+  font-family: sans-serif Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 55px;
+  line-height: 80px;
+  letter-spacing: 0.7px;
+  color: #013A4C;
+}
+
+.wrapper-board .board .descr .wrapper-descr p {
+  display: block;
+  font-family: sans-serif Work Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 21px;
+  line-height: 28px;
+  color: #013A4C;
+}
+.wrapper-board .board .descr .wrapper-descr .btn-wrapper{
+  display: flex;
+  justify-content: start;
+}
+.wrapper-board .board .descr .wrapper-descr button {
+  background: #D3E8F4;
+  border: 1px solid #346170;
+  border-radius: 4px;
+  padding: 11px 17px 11px 17px;
+  font-family: sans-serif Work Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.wrapper-board .board .descr .wrapper-descr .list-items {
+  list-style-type: none;
+  margin-top: 56px;
+  margin-bottom: 44px;
+}
+
+.wrapper-board .board .descr .wrapper-descr .list-items .item {
+  display: flex;
+  margin-bottom: 8px;
+  text-align: center;
+  font-family: sans-serif Work Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  color: #013A4C;
+}
+
+.wrapper-board .board .descr .wrapper-descr .list-items img {
+  display: inline-block;
+  margin-right: 8px;
+}
+
+
